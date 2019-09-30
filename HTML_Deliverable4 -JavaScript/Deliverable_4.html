@@ -1,0 +1,52 @@
+
+<html lang en-us> 
+<header> 
+	<link rel="stylesheet" href="Deliverable_4.css">
+	<script> 
+	function validationsForm (){
+		var z = document.forms ["crisForm"]["firstName"].value;
+		var x = document.forms ["crisForm"]["lastName"].value;
+		var a = document.forms ["crisForm"]["email"].value;
+	
+		if(z == ""){
+			alert("You must fill out the first name textbox");
+			return false; 
+		}
+		else if ( x == "" ) {
+			alert("You must fill out the last name textbox ");
+			return false ; 
+		}
+		else if ( a == "" ) {
+			alert("You must fill out the email textbox ");
+			return false; 
+		}
+	}
+		
+	</script>
+</header> 
+<body>
+<h1> Customer Information </h1>  
+<form name = "crisForm" action = "" onsubmit = "return validationsForm ()" method = "post" > 
+	<fieldset> 
+			<p> 
+				<label> First Name : <input type = "text" name = "firstName" ></label> 
+				<label> Last Name :<input type = "text" name = "lastName" >  </label> 
+				<label> Email : <input type = "text" name = "email" > </label> 
+				<label> *Are you a US Resident? </label> 
+				<select>
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+				</select>
+				<input type="submit" value="Submit" >
+			</p>
+	</fieldset>	
+</form>
+<h2>888-888-8888</h2>
+</body> 
+</html>
+
+
+
+
+
+
